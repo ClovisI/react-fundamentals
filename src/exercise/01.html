@@ -1,19 +1,21 @@
-<!-- Basic JavaScript-rendered Hello World -->
-<!-- http://localhost:3000/isolated/exercise/01.html -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
-<!-- 🐨 Then create a <script type="module"> for your JavaScript -->
-<!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
-<!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
-<!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
-<!-- These next instructions are to be written in JavaScript in the <script> tag -->
-<!-- 🐨 Create a div -->
-<!--   💰 document.createElement('div') -->
+<body>
+  <script type="module">
+    const rootMaker = document.createElement('div');
+    rootMaker.setAttribute=('id','root');
+    document.body.append(rootMaker);
+    const divMaker = document.createElement('div');
+    divMaker.textContent= "Hello World";
+    divMaker.className= 'container';
+    rootMaker.append(divMaker);
+  </script>
+</body>
 
-<!-- 🐨 Set the div's textContent to 'Hello World' and className to 'container' -->
-<!--   💰 div.textContent = '...' -->
-
-<!-- 🐨 Append the div to the root div using `append` -->
-<!--   💰 document.getElementById('root') -->
-<!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+</html>
